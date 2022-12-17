@@ -1,0 +1,88 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 600px;
+  max-height: 90%;
+}
+
+.addTask h2 {
+  margin-bottom: 25px;
+}
+
+.input-div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.addTask #task {
+  height: 35px;
+  width: 275px;
+  border-radius: 12px;
+  border: 1px solid #d6d4e2;
+  padding: 16px;
+}
+
+.addTask #createTaskBtn {
+  cursor: pointer;
+  height: 35px;
+  border-radius: 12px;
+  border: none;
+  padding: 16px;
+  background-color: #02b553;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.taskBoard {
+  overflow-y: scroll;
+}
+
+.taskBoard::-webkit-scrollbar {
+  display: none;
+}
+
+.taskBoard h2 {
+  margin-bottom: 15px;
+}
+
+#tasks p {
+  cursor: pointer;
+  background-color: white;
+  margin-bottom: 15px;
+  height: fit-content;
+  border: 1px solid #d6d4e2;
+  border-radius: 15px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  word-break: keep-all;
+}
+
+.check {
+  cursor: pointer;
+  position: relative;
+  left: -2%;
+  width: 15px;
+}
+
+.trash {
+  cursor: pointer;
+  position: relative;
+  right: -95%;
+  width: 15px;
+}
